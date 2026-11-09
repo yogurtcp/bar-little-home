@@ -1,6 +1,6 @@
 # Bar’s Little Home · בר בבית
 
-A small pixel-art home for Bar to explore everyday choices, their consequences, and asking a parent for care. Built for a tablet, without page scrolling. All story text and speech use **Hebrew first, then English**.
+A small pixel-art life simulator for Bar: body needs rise, actions affect them, ignored needs have visible consequences, and a parent is always available for care. Built for a tablet, without page scrolling. All story text and speech use **Hebrew first, then English**.
 
 Play: **https://yogurtcp.github.io/bar-little-home/**
 
@@ -38,13 +38,32 @@ The app checks for a published update at online startup only. It does not poll o
 
 ## Art and speech
 
-- Original artwork: OpenAI ImageGen. The [original atlases and exact prompts](art-source/PROMPTS.md) are included. `python3 scripts/extract-art.py` extracts sprites with Pillow, maintaining a consistent scale and baseline. This is a game illustration, not a photograph of Bar or his parents.
-- Hebrew: local [BlueTTS](https://github.com/maxmelichov/BlueTTS) female voice; bundled MP3 recordings, pronunciation map, provenance JSON, and [upstream license](scripts/hebrew/BLUETTS_LICENSE.txt) are included. No cloud Hebrew speech dependency. See `scripts/generate-hebrew-blue.py --help` and `scripts/requirements-hebrew-blue.txt` to regenerate. Paths to the local engine, model, and G2P model must be supplied.
-- English: Microsoft Aria voice recordings generated at build time with `edge-tts`. Install `edge-tts` in a Python environment, then run `python scripts/generate-english.py`. Recordings use content-hashed names so changed text never reuses stale speech.
-- Narration source: `src/messages.js`; interaction rules: `src/state.js`.
+- Original artwork: built-in OpenAI ImageGen. The [original home prompts](art-source/PROMPTS.md) and [life simulator prompts and atlases](art-source/PROMPTS-LIFE-SIM.md) are included. New poses show pee/poo urgency, hunger, dirty clothes, eating, washing and wet clothes. Game assets live in `public/art/`.
+- Hebrew: **he-IL-HilaNeural**, generated from reviewed, fully pointed Hebrew at build time. [Pronunciation verification](AUDIO_VERIFICATION.md), [recording provenance](scripts/hebrew/hila-recordings.json), and the content-hashed MP3 assets are included. Install `edge-tts` and `mutagen`, then run `python scripts/generate-hebrew.py`.
+- English: Microsoft Aria, recorded with `edge-tts`. Run `python scripts/generate-english.py` to regenerate. No browser voice, cloud API, or connectivity is needed during play.
+- Earlier BlueTTS rebuilding scripts/provenance are retained for history; the published game uses the Hila recording manifest.
+- Narration source: `src/messages.js`; body simulation: `src/simulation.js`; actions and routines: `src/state.js`.
+
+## Body simulation and consequences
+
+Four meters represent **pee, poo, hunger and dirt**. Fuller means more need. Tap a meter for the relevant care choices. A controllable game clock advances while the game is visible and active; it pauses during speech, care steps, dialogs and background/closed play. There is no elapsed-time catch-up when reopening. The pause button stops passive time; player actions still affect needs. Speed toggles 1×/2× and the sand timer deliberately advances 15 game minutes.
+
+- **Drinking → delayed pee:** water queues a later bladder increase. A full pee meter produces urgency and a toilet pose. Ignoring it beyond a grace period can lead to a wet-clothes accident and a stationary floor puddle. Changing clothes, washing and wiping the floor are distinct actions.
+- **Eating → hunger relief and later poo:** meals reduce hunger substantially and queue digestion. Sweets only reduce hunger slightly. Eating repeatedly after feeling full can produce tummy discomfort. Poo has its own meter, urgency, toilet routine, and clothing consequence if ignored.
+- **Play → hunger and dirt:** continuing to play raises both needs faster. Very high hunger makes Bar low-energy and stops play until he gets food. High dirt visibly marks clothes and produces a sweaty smell and discomfort.
+- **Appropriate care matters:** pee and poo routines address their own meter, then offer handwashing. A shower cleans Bar and clothes but does not clear toilet needs or hunger. A hug comforts; it does not erase bodily needs or dental pain. Rest does not resolve holding-poo discomfort.
+- **Connected household events:** broken tables, scattered toys, spills, washable drawing marks, sound comfort, rest and dental care remain part of the same home.
+
+The picture chains beside narration show causes, consequences and care. The drawing/history button opens the last 18 story entries with need snapshots and replayable bilingual narration. Help is paged when many problems coexist, so every relevant care choice stays reachable.
+
+Needs, queued digestion, urgency grace periods, clothes, puddle location, story history, current routine, selected parent and pause/speed settings are saved and migrated from earlier versions.
 
 ## Story accuracy
 
 Time is compressed explicitly when “later” is chosen. A single missed brushing does not produce toothache. Repeated skips move the story forward over a long period; brushing does not clear established tooth pain. A separate parent-supported dentist visit/care step resolves that story. Crying is met with comfort. Loud music is represented visually and never raises playback volume. Routines avoid humiliation or frightening injuries.
+
+Timing is deliberately compressed for play; these rules are not a medical timetable. Accidents receive calm support and cleanup, without shame or loss of food, water, help or affection. Holding-poo discomfort is represented separately from sweets or overeating discomfort.
+
+Body-care references: [NHS constipation in children](https://www.nhs.uk/baby/health/constipation-in-children/), [NHS soiling in children](https://www.nhs.uk/symptoms/soiling-child-pooing-their-pants/).
 
 Dental references: [NHS tooth decay](https://www.nhs.uk/conditions/tooth-decay/), [NHS toothache](https://www.nhs.uk/symptoms/toothache/). These are simplified stories about communication and care, not diagnostic or treatment simulations.

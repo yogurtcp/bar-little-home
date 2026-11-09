@@ -28,7 +28,7 @@ def manifest(root):
 def metadata(args):
  return {'engine':'BlueTTS 2.5','voice':VOICE,'engineCommit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=args.engine_path,text=True).strip(),
   'modelRevision':(args.model_dir/'revision.txt').read_text().strip(),'g2pRevision':(args.g2p_model.parent/'revision.txt').read_text().strip(),
-  'steps':16,'cfgScale':4.0,'speed':.8,'sampleRate':44100,'seed':SEED,'recipe':'blue-hebrew-female-v1'}
+  'steps':24,'cfgScale':4.0,'speed':.8,'sampleRate':44100,'seed':SEED,'recipe':'blue-hebrew-home-niqqud-v2'}
 def identity(meta,text,ipa):
  recipe=json.dumps({'settings':meta,'text':text,'ipa':ipa},ensure_ascii=False,sort_keys=True)
  return hashlib.sha256(recipe.encode()).hexdigest()[:20]
@@ -102,8 +102,16 @@ def audio(args,projects,meta):
    temporary=path.with_suffix('.tmp')
    for attempt in range(5):
     np.random.seed(SEED+attempt)
-    samples,_=tts(entry['ipa'],lang='he',style=style,total_step=16,cfg_scale=4.0,speed=.8,text_is_phonemes=True,normalize_text=False)
-    samples=limit_peak(samples).reshape(-1)
+    # Preserve the complete /ro-tse/ syllables with a brief word boundary.
+    parts=re.split(r'(ʁoˈtse)',entry['ipa']) if 'רוֹצֶה' in text else [entry['ipa']]
+    rendered=[]
+    for part in parts:
+     if not part.strip():continue
+     fragment=part.strip().rstrip('.,!?')+'.'
+     chunk,_=tts(fragment,lang='he',style=style,total_step=24,cfg_scale=4.0,speed=.8,text_is_phonemes=True,normalize_text=False)
+     if rendered:rendered.append(np.zeros(round(tts.sample_rate*.12),dtype=np.float32))
+     rendered.append(chunk.reshape(-1))
+    samples=limit_peak(np.concatenate(rendered)).reshape(-1)
     sf.write(temporary,samples,tts.sample_rate,format='MP3',subtype='MPEG_LAYER_III')
     try:stats(temporary)
     except ValueError:
@@ -140,7 +148,7 @@ def activate(args,projects,meta):
  # All three sets are complete and decoded before any live manifest is changed.
  for root,path,existing,records,previous in updates:
   save_json(root/'scripts/hebrew/blue-recordings.json',{**meta,'records':records,'previousPaths':previous})
-  atomic(path,('// Generated recordings; Hebrew uses the approved local female BlueTTS voice.\nexport const audioManifest = '+json.dumps(existing,ensure_ascii=False,indent=2)+';\n').encode())
+  atomic(path,('// Generated recordings; pointed Hebrew uses the local female BlueTTS voice with clear word boundaries.\nexport const audioManifest = '+json.dumps(existing,ensure_ascii=False,indent=2)+';\n').encode())
   print(f'{root.name}: activated {len(records)} complete Hebrew recordings',flush=True)
 def main():
  parser=argparse.ArgumentParser(description=__doc__)
