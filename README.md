@@ -39,7 +39,7 @@ The app checks for a published update at online startup only. It does not poll o
 ## Art and speech
 
 - Original artwork: OpenAI ImageGen. The [original atlases and exact prompts](art-source/PROMPTS.md) are included. `python3 scripts/extract-art.py` extracts sprites with Pillow, maintaining a consistent scale and baseline. This is a game illustration, not a photograph of Bar or his parents.
-- Hebrew: local [BlueTTS](https://github.com/blueboxai/BlueTTS) female voice; bundled MP3 recordings, pronunciation map, provenance JSON, and [upstream license](scripts/hebrew/BLUETTS_LICENSE.txt) are included. No cloud Hebrew speech dependency. See `scripts/generate-hebrew-blue.py --help` and `scripts/requirements-hebrew-blue.txt` to regenerate. Paths to the local engine, model, and G2P model must be supplied.
+- Hebrew: local [BlueTTS](https://github.com/maxmelichov/BlueTTS) female voice; bundled MP3 recordings, pronunciation map, provenance JSON, and [upstream license](scripts/hebrew/BLUETTS_LICENSE.txt) are included. No cloud Hebrew speech dependency. See `scripts/generate-hebrew-blue.py --help` and `scripts/requirements-hebrew-blue.txt` to regenerate. Paths to the local engine, model, and G2P model must be supplied.
 - English: Microsoft Aria voice recordings generated at build time with `edge-tts`. Install `edge-tts` in a Python environment, then run `python scripts/generate-english.py`. Recordings use content-hashed names so changed text never reuses stale speech.
 - Narration source: `src/messages.js`; interaction rules: `src/state.js`.
 
