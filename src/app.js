@@ -2,6 +2,8 @@ import{messages}from'./messages.js';import{audioManifest}from'./audio-manifest.j
 const $=s=>document.querySelector(s),requestDialog=$('#requests'),infoDialog=$('#info');let raw;try{raw=localStorage.getItem(SAVE_KEY);}catch{}let state=restore(raw);if(!messages[state.event])state.event='welcome';
 let sequence=0,audio=null,cancelAudio=null,playing=false,shown=[state.event],deferredInstall=null,waitingWorker=null,upgrading=false,moving=false,motionTimer=null,interaction=0,activeInteraction=false;
 const save=()=>{try{localStorage.setItem(SAVE_KEY,JSON.stringify(state));}catch{$('#offline').textContent='השמירה אינה זמינה בדפדפן הזה';}};
+// Reuse one media element across languages and requests, including mobile Safari.
+const player=new Audio();player.preload='auto';
 const art=name=>'./art/'+name+'.webp';
 const button=c=>`<button data-action="${c.id}"><img src="${art(c.icon)}" alt=""><span>${c.he}<small lang="en" dir="ltr">${c.en}</small></span></button>`;
 const points=[['table','שולחן','Table',21,73],['water','מים','Water',32,64],['candy','ממתקים','Sweets',60,37],['toys','צעצועים','Toys',55,91],['draw','לצייר','Draw',39,39],['music','מוזיקה','Music',66,64],['sleep','מנוחה','Rest',45,67],['teeth','שיניים','Teeth',75,39],['toilet','שירותים','Toilet',85,64],['shower','מקלחת','Shower',94,39]];
@@ -22,7 +24,7 @@ function renderActions(){const list=choices(state);$('#actions').classList.toggl
 function render(){renderWorld();renderStory();renderActions();}
 function stopAudio(){sequence++;cancelAudio?.(false);cancelAudio=null;if(audio){audio.pause();audio.onended=null;audio.onerror=null;audio=null;}playing=false;$('#replay').classList.remove('playing');}
 async function speak(ids){stopAudio();if(state.muted)return true;const token=sequence;playing=true;$('#replay').classList.add('playing');let successful=true;
- for(const lang of['he','en'])for(const id of ids){if(token!==sequence)return false;const m=messages[id];const src=lang==='he'?audioManifest.he[m.he]:englishAudio[m.en];const ok=await new Promise(resolve=>{cancelAudio=resolve;audio=new Audio(new URL(src,location.href));audio.onended=()=>resolve(true);audio.onerror=()=>resolve(false);audio.play().catch(()=>resolve(false));});if(!ok){successful=false;break;}}
+ for(const lang of['he','en'])for(const id of ids){if(token!==sequence)return false;const m=messages[id];const src=lang==='he'?audioManifest.he[m.he]:englishAudio[m.en];const ok=await new Promise(resolve=>{cancelAudio=resolve;audio=player;audio.src=new URL(src,location.href).href;audio.onended=()=>resolve(true);audio.onerror=()=>resolve(false);audio.play().catch(()=>resolve(false));});if(!ok){successful=false;break;}}
  if(token!==sequence)return false;audio=null;cancelAudio=null;playing=false;$('#replay').classList.remove('playing');if(!successful)$('#announcement').textContent='אפשר לנסות שוב בכפתור ההשמעה / Tap Replay to try the recording again.';safeUpdate();return true;
 }
 const requestMessage={food:'askFood',water:'askWater',shower:'askShower',toilet:'askToilet',help:'askHelp',hug:'askHug',break:'askBreak',hurt:'askHurt'};
