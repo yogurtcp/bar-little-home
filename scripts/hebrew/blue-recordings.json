@@ -1,0 +1,656 @@
+{
+  "engine": "BlueTTS 2.5",
+  "voice": "libri_female_6147",
+  "engineCommit": "0e38dbf08ed53f85863d1eab092bd9572c53a503",
+  "modelRevision": "468da64b4a51795a7594a3637727dbaf876b6df2",
+  "g2pRevision": "679c56ca449d41873fb8ff7711ddf7563d28198f",
+  "steps": 16,
+  "cfgScale": 4.0,
+  "speed": 0.8,
+  "sampleRate": 44100,
+  "seed": 20261025,
+  "recipe": "blue-hebrew-female-v1",
+  "records": {
+    "בר בבית! נוגעים בחפצים, מנסים, ואפשר תמיד לבקש עזרה.": {
+      "input": "בר בבית! נוגעים בחפצים, מנסים, ואפשר תמיד לבקש עזרה.",
+      "ipa": "bˈaʁ babˈajit. nogʔˈim baχafatsˈim menasˈim veʔefʃˈaʁ tamˈid levakˈeʃ ezʁˈa.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-a48e2445fa1bf456b609.mp3",
+      "seed": 20261025,
+      "seconds": 4.73687074829932,
+      "peak": 0.7439624071121216,
+      "sampleRate": 44100
+    },
+    "אמא": {
+      "input": "אמא",
+      "ipa": "ˈima.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-db4943f9909a91032e28.mp3",
+      "seed": 20261025,
+      "seconds": 0.4876190476190476,
+      "peak": 0.47380611300468445,
+      "sampleRate": 44100
+    },
+    "אבא": {
+      "input": "אבא",
+      "ipa": "ˈaba.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-5b4102aba62e324aaade.mp3",
+      "seed": 20261025,
+      "seconds": 0.626938775510204,
+      "peak": 0.8129552006721497,
+      "sampleRate": 44100
+    },
+    "אני רעב. אפשר אוכל?": {
+      "input": "אני רעב. אפשר אוכל?",
+      "ipa": "anˈi ʁaʔˈev. efʃˈaʁ ˈoχel?",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-331abfd121d1bad48535.mp3",
+      "seed": 20261025,
+      "seconds": 1.4628571428571429,
+      "peak": 0.9404723644256592,
+      "sampleRate": 44100
+    },
+    "אני צמא. אפשר מים?": {
+      "input": "אני צמא. אפשר מים?",
+      "ipa": "anˈi tsamˈe. efʃˈaʁ mˈajim?",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-30b204e0607488fba0fc.mp3",
+      "seed": 20261025,
+      "seconds": 1.4628571428571429,
+      "peak": 0.6804416179656982,
+      "sampleRate": 44100
+    },
+    "אני רוצה להתקלח. אפשר עזרה?": {
+      "input": "אני רוצה להתקלח. אפשר עזרה?",
+      "ipa": "anˈi ʁotsˈe lehitkalˈeaχ. efʃˈaʁ ezʁˈa?",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-f498e667497daa21057a.mp3",
+      "seed": 20261025,
+      "seconds": 2.36843537414966,
+      "peak": 0.6308814883232117,
+      "sampleRate": 44100
+    },
+    "אני צריך לשירותים. אפשר עזרה?": {
+      "input": "אני צריך לשירותים. אפשר עזרה?",
+      "ipa": "anˈi tsaʁˈiχ laʃeʁutˈim. efʃˈaʁ ezʁˈa?",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-5608e9f75e156fe78b66.mp3",
+      "seed": 20261025,
+      "seconds": 2.2291156462585033,
+      "peak": 0.6613758206367493,
+      "sampleRate": 44100
+    },
+    "אני צריך עזרה, בבקשה.": {
+      "input": "אני צריך עזרה, בבקשה.",
+      "ipa": "anˈi tsaʁˈiχ ezʁˈa bevakaʃˈa.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-e299b41117dc5d93032c.mp3",
+      "seed": 20261025,
+      "seconds": 1.8808163265306121,
+      "peak": 0.6359842419624329,
+      "sampleRate": 44100
+    },
+    "אני רוצה חיבוק.": {
+      "input": "אני רוצה חיבוק.",
+      "ipa": "anˈi ʁotsˈe χibˈuk.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-95abaf82835f3deeeb78.mp3",
+      "seed": 20261025,
+      "seconds": 0.9752380952380952,
+      "peak": 0.40493044257164,
+      "sampleRate": 44100
+    },
+    "אני רוצה הפסקה במקום שקט.": {
+      "input": "אני רוצה הפסקה במקום שקט.",
+      "ipa": "anˈi ʁotsˈe hafsakˈa bemakˈom ʃakˈet.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-c8795b32b7a7b2c05ca0.mp3",
+      "seed": 20261025,
+      "seconds": 2.2987755102040817,
+      "peak": 0.7245169281959534,
+      "sampleRate": 44100
+    },
+    "משהו כואב לי. אני צריך עזרה.": {
+      "input": "משהו כואב לי. אני צריך עזרה.",
+      "ipa": "mˈaʃehu koʔˈev li. anˈi tsaʁˈiχ ezʁˈa.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-0d8897baf7e3283986f1.mp3",
+      "seed": 20261025,
+      "seconds": 2.2291156462585033,
+      "peak": 0.6793979406356812,
+      "sampleRate": 44100
+    },
+    "בטח. מה תרצה לאכול? אפשר בננה או כריך.": {
+      "input": "בטח. מה תרצה לאכול? אפשר בננה או כריך.",
+      "ipa": "bˈetaχ. ma tiʁtsˈe leʔeχˈol? efʃˈaʁ banˈana o kaʁˈiχ.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-a9b03950b0379d324f46.mp3",
+      "seed": 20261025,
+      "seconds": 3.1346938775510202,
+      "peak": 0.761040985584259,
+      "sampleRate": 44100
+    },
+    "ביקשנו אוכל, קיבלנו ארוחה, ובר כבר לא רעב.": {
+      "input": "ביקשנו אוכל, קיבלנו ארוחה, ובר כבר לא רעב.",
+      "ipa": "bikˈaʃnu ˈoχel kibˈalnu aʁuχˈa ubˈaʁ kvar lo ʁaʔˈev.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-13e95821e22746b842f6.mp3",
+      "seed": 20261025,
+      "seconds": 3.1346938775510202,
+      "peak": 0.8202783465385437,
+      "sampleRate": 44100
+    },
+    "ביקשנו מים ושתינו. עכשיו נעים יותר.": {
+      "input": "ביקשנו מים ושתינו. עכשיו נעים יותר.",
+      "ipa": "bikˈaʃnu mˈajim veʃatˈinu. aχʃˈav naʔˈim jotˈeʁ.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-b7e46408a44bf2847cfe.mp3",
+      "seed": 20261025,
+      "seconds": 2.786394557823129,
+      "peak": 0.9330835938453674,
+      "sampleRate": 44100
+    },
+    "אני כאן לעזור. נכין מגבת ונלך למקלחת.": {
+      "input": "אני כאן לעזור. נכין מגבת ונלך למקלחת.",
+      "ipa": "anˈi kan laʔazˈoʁ. naχˈin magˈevet venelˈeχ lamiklaχˈat.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-f4e56cab85cc818f1b51.mp3",
+      "seed": 20261025,
+      "seconds": 3.4133333333333336,
+      "peak": 0.8768805265426636,
+      "sampleRate": 44100
+    },
+    "התקלחנו והתלבשנו בבגדים נקיים. איזה ריח נעים!": {
+      "input": "התקלחנו והתלבשנו בבגדים נקיים. איזה ריח נעים!",
+      "ipa": "hitkalˈaχnu vehitlabˈaʃnu bivgadˈim nekijˈim. ˈeze ʁˈeaχ naʔˈim.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-dbe8bb8060e98efc5d0b.mp3",
+      "seed": 20261025,
+      "seconds": 3.8312925170068026,
+      "peak": 0.9263663291931152,
+      "sampleRate": 44100
+    },
+    "שמעתי שאתה צריך לשירותים. אני אבוא איתך.": {
+      "input": "שמעתי שאתה צריך לשירותים. אני אבוא איתך.",
+      "ipa": "ʃamˈati ʃeʔatˈa tsaʁˈiχ laʃeʁutˈim. anˈi avˈo itχˈa.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-5be21f018528e72880db.mp3",
+      "seed": 20261025,
+      "seconds": 3.2043537414965986,
+      "peak": 0.7924638986587524,
+      "sampleRate": 44100
+    },
+    "הלכנו לשירותים, ואז שטפנו ידיים. עכשיו אפשר לחזור לשחק.": {
+      "input": "הלכנו לשירותים, ואז שטפנו ידיים. עכשיו אפשר לחזור לשחק.",
+      "ipa": "halˈaχnu laʃeʁutˈim veʔˈaz ʃatˈafnu jadˈajim. aχʃˈav efʃˈaʁ laχzˈoʁ lesaχˈek.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-2b13ff5ae5487dcdab97.mp3",
+      "seed": 20261025,
+      "seconds": 4.806530612244898,
+      "peak": 0.9329279661178589,
+      "sampleRate": 44100
+    },
+    "אני כאן איתך. בוא נראה איך אפשר לעזור.": {
+      "input": "אני כאן איתך. בוא נראה איך אפשר לעזור.",
+      "ipa": "anˈi kan itχˈa. bo niʁʔˈe eχ efʃˈaʁ laʔazˈoʁ.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-3b64ba8221d2be237b7c.mp3",
+      "seed": 20261025,
+      "seconds": 2.5774149659863945,
+      "peak": 0.8604472279548645,
+      "sampleRate": 44100
+    },
+    "קיבלנו חיבוק. מותר לבכות, ואפשר לבקש קרבה ועזרה.": {
+      "input": "קיבלנו חיבוק. מותר לבכות, ואפשר לבקש קרבה ועזרה.",
+      "ipa": "kibˈalnu χibˈuk. mutˈaʁ livkˈot veʔefʃˈaʁ levakˈeʃ kiʁvˈa veʔezʁˈa.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-7383f3ea99b77b156c74.mp3",
+      "seed": 20261025,
+      "seconds": 4.1099319727891155,
+      "peak": 0.8282894492149353,
+      "sampleRate": 44100
+    },
+    "אפשר לנוח על הכרית. אני כאן כשאתה צריך אותי.": {
+      "input": "אפשר לנוח על הכרית. אני כאן כשאתה צריך אותי.",
+      "ipa": "efʃˈaʁ lanˈuaχ al hakaʁˈit. anˈi kan kʃeʔatˈa tsaʁˈiχ otˈi.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-acc33aa6d60fc79e9f20.mp3",
+      "seed": 20261025,
+      "seconds": 3.5526530612244898,
+      "peak": 0.7847961187362671,
+      "sampleRate": 44100
+    },
+    "תודה שסיפרת. איפה לא נעים לך?": {
+      "input": "תודה שסיפרת. איפה לא נעים לך?",
+      "ipa": "todˈa ʃesipˈaʁta. ˈefo lo naʔˈim leχˈa?",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-f3ee2da70363f22a123e.mp3",
+      "seed": 20261025,
+      "seconds": 2.2291156462585033,
+      "peak": 0.719288170337677,
+      "sampleRate": 44100
+    },
+    "זה השולחן. אפשר לשבת ולאכול, או לראות מה קורה כשקופצים עליו.": {
+      "input": "זה השולחן. אפשר לשבת ולאכול, או לראות מה קורה כשקופצים עליו.",
+      "ipa": "ze haʃulχˈan. efʃˈaʁ laʃˈevet veleʔeχˈol o liʁʔˈot ma koʁˈe kʃekoftsˈim alˈav.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-222d7873f98ece4b6c6d.mp3",
+      "seed": 20261025,
+      "seconds": 4.667210884353741,
+      "peak": 0.6976304650306702,
+      "sampleRate": 44100
+    },
+    "התיישבנו ליד השולחן. הוא נשאר יציב.": {
+      "input": "התיישבנו ליד השולחן. הוא נשאר יציב.",
+      "ipa": "hitjaʃˈavnu lejad haʃulχˈan. hu niʃʔˈaʁ jatsˈiv.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-bb32a8ebbc02b7481746.mp3",
+      "seed": 20261025,
+      "seconds": 2.716734693877551,
+      "peak": 0.8237013220787048,
+      "sampleRate": 44100
+    },
+    "השולחן התנדנד ורגל נשברה. בר נבהל ובוכה. אפשר לקרוא לאמא או לאבא.": {
+      "input": "השולחן התנדנד ורגל נשברה. בר נבהל ובוכה. אפשר לקרוא לאמא או לאבא.",
+      "ipa": "haʃulχˈan hitnadnˈed veʁˈegel niʃbeʁˈa. bˈaʁ nivhˈal uvoχˈe. efʃˈaʁ likʁˈo leʔˈima o leʔˈaba.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-0c810d724a86ab8e5661.mp3",
+      "seed": 20261025,
+      "seconds": 5.572789115646258,
+      "peak": 0.9345290064811707,
+      "sampleRate": 44100
+    },
+    "קיבלנו עזרה וניחום. מבוגר תיקן את השולחן.": {
+      "input": "קיבלנו עזרה וניחום. מבוגר תיקן את השולחן.",
+      "ipa": "kibˈalnu ezʁˈa veniχˈum. mevugˈaʁ tikˈen et haʃulχˈan.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-02265e6da780692cc2ff.mp3",
+      "seed": 20261025,
+      "seconds": 3.2043537414965986,
+      "peak": 0.8986889123916626,
+      "sampleRate": 44100
+    },
+    "על הכרית אפשר לקפוץ בנחת. השולחן נשאר שלם.": {
+      "input": "על הכרית אפשר לקפוץ בנחת. השולחן נשאר שלם.",
+      "ipa": "al hakaʁˈit efʃˈaʁ likpˈots benˈaχat. haʃulχˈan niʃʔˈaʁ ʃalˈem.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-d075d8aa8070ccb31449.mp3",
+      "seed": 20261025,
+      "seconds": 3.6919727891156464,
+      "peak": 0.9330570697784424,
+      "sampleRate": 44100
+    },
+    "בצנצנת יש ממתקים. כמה נבחר?": {
+      "input": "בצנצנת יש ממתקים. כמה נבחר?",
+      "ipa": "batsintsˈenet jeʃ mamtakˈim. kˈama nivχˈaʁ?",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-f2b4b682aaaeefec1dcc.mp3",
+      "seed": 20261025,
+      "seconds": 2.507755102040816,
+      "peak": 0.661433219909668,
+      "sampleRate": 44100
+    },
+    "בחרנו ממתק קטן ואכלנו בנחת.": {
+      "input": "בחרנו ממתק קטן ואכלנו בנחת.",
+      "ipa": "baχˈaʁnu mamtˈak katˈan veʔaχˈalnu benˈaχat.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-38dfa7e11077f6ca24ab.mp3",
+      "seed": 20261025,
+      "seconds": 2.9257142857142857,
+      "peak": 0.9610991477966309,
+      "sampleRate": 44100
+    },
+    "אכלנו הרבה ממתקים ברצף. עכשיו כואבת לבר הבטן. אפשר לספר להורה.": {
+      "input": "אכלנו הרבה ממתקים ברצף. עכשיו כואבת לבר הבטן. אפשר לספר להורה.",
+      "ipa": "aχˈalnu haʁbˈe mamtakˈim beʁˈetsef. aχʃˈav koʔˈevet lebˈaʁ habˈeten. efʃˈaʁ lesapˈeʁ lehoʁˈe.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-bfd5b6a939586737c891.mp3",
+      "seed": 20261025,
+      "seconds": 5.712108843537415,
+      "peak": 0.9462682604789734,
+      "sampleRate": 44100
+    },
+    "תודה שסיפרת שכואבת הבטן. נישאר יחד וננוח קצת.": {
+      "input": "תודה שסיפרת שכואבת הבטן. נישאר יחד וננוח קצת.",
+      "ipa": "todˈa ʃesipˈaʁta ʃekoʔˈevet habˈeten. niʃaʔˈeʁ jˈaχad venanˈuaχ ktsˈat.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-f0bbb10ca6fd2c4fe994.mp3",
+      "seed": 20261025,
+      "seconds": 4.31891156462585,
+      "peak": 0.930630624294281,
+      "sampleRate": 44100
+    },
+    "אחרי מנוחה וזמן ביחד, בר מרגיש נעים יותר.": {
+      "input": "אחרי מנוחה וזמן ביחד, בר מרגיש נעים יותר.",
+      "ipa": "aχaʁˈej menuχˈa uzmˈan bejˈaχad bˈaʁ maʁgˈiʃ naʔˈim jotˈeʁ.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-b728d145f0d301748718.mp3",
+      "seed": 20261025,
+      "seconds": 3.4829931972789114,
+      "peak": 0.9250474572181702,
+      "sampleRate": 44100
+    },
+    "כאן המקלחת. אפשר לבקש עזרה להתרחץ, או לבחור אחר כך.": {
+      "input": "כאן המקלחת. אפשר לבקש עזרה להתרחץ, או לבחור אחר כך.",
+      "ipa": "kan hamiklaχˈat. efʃˈaʁ levakˈeʃ ezʁˈa lehitraχˈets o livχˈoʁ aχˈaʁ kaχ.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-0c549de6b24303ee859d.mp3",
+      "seed": 20261025,
+      "seconds": 4.458231292517007,
+      "peak": 0.8377111554145813,
+      "sampleRate": 44100
+    },
+    "בחרנו אחר כך. עוד זמן של משחק עבר.": {
+      "input": "בחרנו אחר כך. עוד זמן של משחק עבר.",
+      "ipa": "baχˈaʁnu aχˈaʁ kaχ. od zmˈan ʃel misχˈak avˈaʁ.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-68672d0eb9a56644e301.mp3",
+      "seed": 20261025,
+      "seconds": 3.0650340136054424,
+      "peak": 0.8867584466934204,
+      "sampleRate": 44100
+    },
+    "שיחקנו והזענו שוב ושוב. יש ריח זיעה. רחצה ובגדים נקיים יעזרו להתרענן.": {
+      "input": "שיחקנו והזענו שוב ושוב. יש ריח זיעה. רחצה ובגדים נקיים יעזרו להתרענן.",
+      "ipa": "siχˈaknu vehizˈanu ʃuv vaʃˈuv. jeʃ ʁˈeaχ zejʔˈa. ʁaχtsˈa uvagadˈim nekijˈim jaʔazʁˈu lehitʁaʔanˈen.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-3f84364fe318c6cd0948.mp3",
+      "seed": 20261025,
+      "seconds": 6.130068027210885,
+      "peak": 0.921519935131073,
+      "sampleRate": 44100
+    },
+    "כאן מצחצחים שיניים. אפשר לצחצח, או לבחור אחר כך.": {
+      "input": "כאן מצחצחים שיניים. אפשר לצחצח, או לבחור אחר כך.",
+      "ipa": "kan metsχatsχˈim ʃinˈajim. efʃˈaʁ letsaχtsˈeaχ o livχˈoʁ aχˈaʁ kaχ.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-d3d8fb7a413603c477c7.mp3",
+      "seed": 20261025,
+      "seconds": 3.9706122448979593,
+      "peak": 0.7869390249252319,
+      "sampleRate": 44100
+    },
+    "דילגנו על הצחצוח הפעם. זמן עובר בסיפור.": {
+      "input": "דילגנו על הצחצוח הפעם. זמן עובר בסיפור.",
+      "ipa": "dilˈagnu al hatsitsˈuaχ hapˈaam. zmˈan ovˈeʁ basipˈuʁ.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-2426011e97fd6331d582.mp3",
+      "seed": 20261025,
+      "seconds": 3.4829931972789114,
+      "peak": 0.8839116096496582,
+      "sampleRate": 44100
+    },
+    "עבר עוד זמן בלי צחצוח. השיניים צריכות טיפול יומיומי.": {
+      "input": "עבר עוד זמן בלי צחצוח. השיניים צריכות טיפול יומיומי.",
+      "ipa": "avˈaʁ od zmˈan bli tsitsˈuaχ. haʃinˈajim tsʁiχˈot tipˈul jomjomˈi.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-5ddf3fb3badf24276bef.mp3",
+      "seed": 20261025,
+      "seconds": 3.622312925170068,
+      "peak": 0.9105440378189087,
+      "sampleRate": 44100
+    },
+    "אחרי הרבה זמן בלי צחצוח, כואבת לבר שן. נספר להורה ונבקש עזרה.": {
+      "input": "אחרי הרבה זמן בלי צחצוח, כואבת לבר שן. נספר להורה ונבקש עזרה.",
+      "ipa": "aχaʁˈej haʁbˈe zmˈan bli tsitsˈuaχ koʔˈevet lebˈaʁ ʃˈen. nesapˈeʁ lehoʁˈe unevakˈeʃ ezʁˈa.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-766b6fd6633677376afc.mp3",
+      "seed": 20261025,
+      "seconds": 5.433469387755102,
+      "peak": 0.7714298963546753,
+      "sampleRate": 44100
+    },
+    "צחצחנו שיניים בעזרת מבוגר. הפה מרגיש נקי ורענן.": {
+      "input": "צחצחנו שיניים בעזרת מבוגר. הפה מרגיש נקי ורענן.",
+      "ipa": "tsχatsˈaχnu ʃinˈajim beʔezʁˈat mevugˈaʁ. hapˈe maʁgˈiʃ nakˈi veʁaʔanˈan.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-93778a4e5d25c4d8aacc.mp3",
+      "seed": 20261025,
+      "seconds": 4.527891156462585,
+      "peak": 0.8708595633506775,
+      "sampleRate": 44100
+    },
+    "הצחצוח שומר על השיניים. כששן כבר כואבת, מספרים להורה ומבקשים טיפול.": {
+      "input": "הצחצוח שומר על השיניים. כששן כבר כואבת, מספרים להורה ומבקשים טיפול.",
+      "ipa": "hatsitsˈuaχ ʃomˈeʁ al haʃinˈajim. kʃeʃˈen kvaʁ koʔˈevet mesapʁˈim lehoʁˈe umevakʃˈim tipˈul.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-fcf7dfae166716d3d203.mp3",
+      "seed": 20261025,
+      "seconds": 5.433469387755102,
+      "peak": 0.9539527893066406,
+      "sampleRate": 44100
+    },
+    "שמעתי שכואבת לך שן. נבקש עזרה מרופא שיניים. אני אבוא איתך.": {
+      "input": "שמעתי שכואבת לך שן. נבקש עזרה מרופא שיניים. אני אבוא איתך.",
+      "ipa": "ʃamˈati ʃekoʔˈevet leχˈa ʃˈen. nevakˈeʃ ezʁˈa meʁofˈe ʃinˈajim. anˈi avˈo itχˈa.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-7dc5f194f95ed9f0c2de.mp3",
+      "seed": 20261025,
+      "seconds": 4.806530612244898,
+      "peak": 0.6943004727363586,
+      "sampleRate": 44100
+    },
+    "אחרי ביקור וטיפול אצל רופא השיניים, בר מרגיש טוב יותר. ממשיכים לשמור על השיניים.": {
+      "input": "אחרי ביקור וטיפול אצל רופא השיניים, בר מרגיש טוב יותר. ממשיכים לשמור על השיניים.",
+      "ipa": "aχaʁˈej bikˈuʁ vetipˈul ˈetsel ʁofˈe haʃinˈajim bˈaʁ maʁgˈiʃ tov jotˈeʁ. mamʃiχˈim liʃmˈoʁ al haʃinˈajim.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-23f273d367997feb2c48.mp3",
+      "seed": 20261025,
+      "seconds": 6.060408163265306,
+      "peak": 0.7664545774459839,
+      "sampleRate": 44100
+    },
+    "כוס מים על השולחן. נשתה, או נראה מה קורה כשהכוס מתהפכת?": {
+      "input": "כוס מים על השולחן. נשתה, או נראה מה קורה כשהכוס מתהפכת?",
+      "ipa": "kos mˈajim al haʃulχˈan. niʃtˈe o niʁʔˈe ma koʁˈe kʃehakˈos mithapˈeχet?",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-299d82de1fc5024cb92d.mp3",
+      "seed": 20261025,
+      "seconds": 3.9706122448979593,
+      "peak": 0.8239184021949768,
+      "sampleRate": 44100
+    },
+    "הכוס התהפכה והמים נשפכו. עכשיו יש שלולית על הרצפה.": {
+      "input": "הכוס התהפכה והמים נשפכו. עכשיו יש שלולית על הרצפה.",
+      "ipa": "hakˈos hitapχˈa vehamˈajim niʃpeχˈu. aχʃˈav jeʃ ʃlulˈit al haʁitspˈa.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-378179780ab90226183d.mp3",
+      "seed": 20261025,
+      "seconds": 4.040272108843538,
+      "peak": 0.9451078176498413,
+      "sampleRate": 44100
+    },
+    "לקחנו מגבת וניגבנו ביחד. הרצפה שוב יבשה.": {
+      "input": "לקחנו מגבת וניגבנו ביחד. הרצפה שוב יבשה.",
+      "ipa": "lakˈaχnu magˈevet venigˈavnu bejˈaχad. haʁitspˈa ʃuv jeveʃˈa.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-9613c7e8ffe1124d4fc1.mp3",
+      "seed": 20261025,
+      "seconds": 3.8312925170068026,
+      "peak": 0.8800786733627319,
+      "sampleRate": 44100
+    },
+    "הנה הצעצועים. אפשר לשחק ואז להחזיר לסל.": {
+      "input": "הנה הצעצועים. אפשר לשחק ואז להחזיר לסל.",
+      "ipa": "hˈine hatsaʔatsuʔˈim. efʃˈaʁ lesaχˈek veʔˈaz lehaχzˈiʁ lasˈal.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-40cb39b1c761f786855f.mp3",
+      "seed": 20261025,
+      "seconds": 3.9706122448979593,
+      "peak": 0.8745059370994568,
+      "sampleRate": 44100
+    },
+    "שיחקנו והשארנו צעצועים בדרך. עכשיו המעבר חסום.": {
+      "input": "שיחקנו והשארנו צעצועים בדרך. עכשיו המעבר חסום.",
+      "ipa": "siχˈaknu vehiʃʔˈaʁnu tsaʔatsuʔˈim badˈeʁeχ. aχʃˈav hamaʔavˈaʁ χasˈum.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-c0e3ecef4de8eecbce73.mp3",
+      "seed": 20261025,
+      "seconds": 4.597551020408163,
+      "peak": 0.8789986968040466,
+      "sampleRate": 44100
+    },
+    "הצעצועים חוסמים את הדרך. אפשר לסדר או לבקש עזרה.": {
+      "input": "הצעצועים חוסמים את הדרך. אפשר לסדר או לבקש עזרה.",
+      "ipa": "hatsaʔatsuʔˈim χosmˈim et hadˈeʁeχ. efʃˈaʁ lesadˈeʁ o levakˈeʃ ezʁˈa.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-e43aeb7b6e5330dc8c88.mp3",
+      "seed": 20261025,
+      "seconds": 4.31891156462585,
+      "peak": 0.7439781427383423,
+      "sampleRate": 44100
+    },
+    "אספנו את הצעצועים לסל. יש שוב מקום ללכת.": {
+      "input": "אספנו את הצעצועים לסל. יש שוב מקום ללכת.",
+      "ipa": "asˈafnu et hatsaʔatsuʔˈim lasˈal. jeʃ ʃuv makˈom lalˈeχet.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-a3772266e618bfa12917.mp3",
+      "seed": 20261025,
+      "seconds": 3.3436734693877552,
+      "peak": 0.9207472801208496,
+      "sampleRate": 44100
+    },
+    "יש לנו צבעים רחיצים. על מה נצייר?": {
+      "input": "יש לנו צבעים רחיצים. על מה נצייר?",
+      "ipa": "jeʃ lˈanu tsvaʔˈim ʁeχitsˈim. al ma netsajˈeʁ?",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-fa67b0ad7bd7e2eefc7e.mp3",
+      "seed": 20261025,
+      "seconds": 2.507755102040816,
+      "peak": 0.9304549098014832,
+      "sampleRate": 44100
+    },
+    "ציירנו על הקיר ונשארו סימנים. אפשר לנקות ולבחור נייר.": {
+      "input": "ציירנו על הקיר ונשארו סימנים. אפשר לנקות ולבחור נייר.",
+      "ipa": "tsijˈaʁnu al hakˈiʁ veniʃʔaʁˈu simanˈim. efʃˈaʁ lenakˈot velivχˈoʁ nejˈaʁ.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-26acdf21d1f544f17e4d.mp3",
+      "seed": 20261025,
+      "seconds": 4.388571428571429,
+      "peak": 0.9482203722000122,
+      "sampleRate": 44100
+    },
+    "ציירנו על הנייר. אפשר לשמור את הציור שלנו!": {
+      "input": "ציירנו על הנייר. אפשר לשמור את הציור שלנו!",
+      "ipa": "tsijˈaʁnu al hanejˈaʁ. efʃˈaʁ liʃmˈoʁ et hatsijˈuʁ ʃelˈanu.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-e0cc257d9c214359fe56.mp3",
+      "seed": 20261025,
+      "seconds": 3.4829931972789114,
+      "peak": 0.9680826663970947,
+      "sampleRate": 44100
+    },
+    "ניקינו ביחד את הצבעים הרחיצים מהקיר. על נייר אפשר להמשיך לצייר.": {
+      "input": "ניקינו ביחד את הצבעים הרחיצים מהקיר. על נייר אפשר להמשיך לצייר.",
+      "ipa": "nikˈinu bejˈaχad et hatsvaʔˈim haʁeχitsˈim mehakˈiʁ. al nejˈaʁ efʃˈaʁ lehamʃˈiχ letsajˈeʁ.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-fd0fb9f017a7a867bf60.mp3",
+      "seed": 20261025,
+      "seconds": 5.294149659863946,
+      "peak": 0.9354327917098999,
+      "sampleRate": 44100
+    },
+    "זה הרמקול. אפשר לבחור עוצמה נעימה או חזקה בסיפור.": {
+      "input": "זה הרמקול. אפשר לבחור עוצמה נעימה או חזקה בסיפור.",
+      "ipa": "ze haʁamkˈol. efʃˈaʁ livχˈoʁ otsmˈa neʔimˈa o χazakˈa basipˈuʁ.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-cf5fe9bce5077e0e45bd.mp3",
+      "seed": 20261025,
+      "seconds": 4.040272108843538,
+      "peak": 0.7829210758209229,
+      "sampleRate": 44100
+    },
+    "בסיפור המוזיקה חזקה מדי. לא נעים לבר באוזניים. אפשר להנמיך או לבקש שקט.": {
+      "input": "בסיפור המוזיקה חזקה מדי. לא נעים לבר באוזניים. אפשר להנמיך או לבקש שקט.",
+      "ipa": "basipˈuʁ hamˈuzika χazakˈa midˈaj. lo naʔˈim lebˈaʁ baʔoznˈajim. efʃˈaʁ lehanmˈiχ o levakˈeʃ ʃˈeket.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-fa2133c1e0619c99e44d.mp3",
+      "seed": 20261025,
+      "seconds": 6.130068027210885,
+      "peak": 0.9230759739875793,
+      "sampleRate": 44100
+    },
+    "בחרנו עוצמה נעימה. עכשיו נעים יותר להקשיב.": {
+      "input": "בחרנו עוצמה נעימה. עכשיו נעים יותר להקשיב.",
+      "ipa": "baχˈaʁnu otsmˈa neʔimˈa. aχʃˈav naʔˈim jotˈeʁ lehakʃˈiv.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-48fffae820b40154c2db.mp3",
+      "seed": 20261025,
+      "seconds": 3.3436734693877552,
+      "peak": 0.8894568085670471,
+      "sampleRate": 44100
+    },
+    "זו פינת המנוחה. ננוח עכשיו או נשחק עוד קצת?": {
+      "input": "זו פינת המנוחה. ננוח עכשיו או נשחק עוד קצת?",
+      "ipa": "zo pinˈat hamenuχˈa. nanˈuaχ aχʃˈav o nesaχˈek od ktsˈat?",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-ed1dc20e9d703ba5a1de.mp3",
+      "seed": 20261025,
+      "seconds": 3.622312925170068,
+      "peak": 0.8679416179656982,
+      "sampleRate": 44100
+    },
+    "בחרנו להמשיך לשחק. עוד זמן עבר.": {
+      "input": "בחרנו להמשיך לשחק. עוד זמן עבר.",
+      "ipa": "baχˈaʁnu lehamʃˈiχ lesaχˈek. od zmˈan avˈaʁ.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-c3ffe6bad4ca7f90b9ed.mp3",
+      "seed": 20261025,
+      "seconds": 2.716734693877551,
+      "peak": 0.8360957503318787,
+      "sampleRate": 44100
+    },
+    "בר עייף ומפהק. אפשר לבקש מנוחה או עזרה להתכונן לשינה.": {
+      "input": "בר עייף ומפהק. אפשר לבקש מנוחה או עזרה להתכונן לשינה.",
+      "ipa": "bˈaʁ ajˈef umefahˈek. efʃˈaʁ levakˈeʃ menuχˈa o ezʁˈa lehitkonˈen laʃenˈa.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-1a374b5dea5fca2b28a0.mp3",
+      "seed": 20261025,
+      "seconds": 4.527891156462585,
+      "peak": 0.8323477506637573,
+      "sampleRate": 44100
+    },
+    "בר נח בפינה נעימה. עוצמים עיניים ונחים קצת.": {
+      "input": "בר נח בפינה נעימה. עוצמים עיניים ונחים קצת.",
+      "ipa": "bˈaʁ naχ bepinˈa neʔimˈa. otsmˈim ejnˈajim venaχˈim ktsˈat.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-144fc1694884c9b38c9b.mp3",
+      "seed": 20261025,
+      "seconds": 3.3436734693877552,
+      "peak": 0.7540221214294434,
+      "sampleRate": 44100
+    },
+    "אלה השירותים. נלך עכשיו, או נבחר אחר כך?": {
+      "input": "אלה השירותים. נלך עכשיו, או נבחר אחר כך?",
+      "ipa": "ˈele haʃeʁutˈim. nelˈeχ aχʃˈav o nivχˈaʁ aχˈaʁ kaχ?",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-12f296b7afbdcce59fd9.mp3",
+      "seed": 20261025,
+      "seconds": 3.2043537414965986,
+      "peak": 0.8636795282363892,
+      "sampleRate": 44100
+    },
+    "חיכינו קצת. הגוף עדיין מבקש ללכת לשירותים.": {
+      "input": "חיכינו קצת. הגוף עדיין מבקש ללכת לשירותים.",
+      "ipa": "χikˈinu ktsˈat. hagˈuf adˈajin mevakˈeʃ lalˈeχet laʃeʁutˈim.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-dece517692067f2a2814.mp3",
+      "seed": 20261025,
+      "seconds": 3.5526530612244898,
+      "peak": 0.9408524036407471,
+      "sampleRate": 44100
+    },
+    "בר ממש צריך לשירותים. אפשר לקרוא להורה וללכת עכשיו.": {
+      "input": "בר ממש צריך לשירותים. אפשר לקרוא להורה וללכת עכשיו.",
+      "ipa": "bˈaʁ mamˈaʃ tsaʁˈiχ laʃeʁutˈim. efʃˈaʁ likʁˈo lehoʁˈe velalˈeχet aχʃˈav.",
+      "method": "explicit-home-pronunciation",
+      "path": "audio/he/blue-4163e14c83e68f55a6f5.mp3",
+      "seed": 20261025,
+      "seconds": 4.527891156462585,
+      "peak": 0.8949648141860962,
+      "sampleRate": 44100
+    }
+  },
+  "previousPaths": []
+}
