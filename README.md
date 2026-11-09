@@ -4,7 +4,7 @@ A small pixel-art home for Bar to explore everyday choices, their consequences, 
 
 Play: **https://yogurtcp.github.io/bar-little-home/**
 
-Tap a household object, then choose an action. Tap the floor to walk. The Mom and Dad buttons always open a picture communication board: food, water, shower, toilet, help, hug, quiet, and pain. A single tap communicates; spoken repetition is never required. There are no scores, deadlines, or punishments.
+Tap a household object to open large picture choices beside it, directly inside the house. The picture labels and bilingual spoken lines are short, and the house has no menus or narration panels underneath it. Tap the floor to walk. The Mom and Dad buttons always open a picture communication board: food, water, shower, toilet, help, hug, quiet, and pain. A single tap communicates; spoken repetition is never required. There are no scores, deadlines, or punishments.
 
 The first version includes a broken table and adult repair, sweets and tummy discomfort, washing and sweaty smell, brushing and dental care, spilled water and wiping, toys blocking a path and tidying, washable crayon marks and paper, story volume and quiet, rest, and toilet routines with handwashing. Support and basic needs remain available during every scenario.
 
