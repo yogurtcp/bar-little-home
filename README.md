@@ -1,6 +1,6 @@
 # Bar’s Little Home · בר בבית
 
-A small pixel-art life simulator for Bar: body needs rise, actions affect them, ignored needs have visible consequences, and a parent is always available for care. Built for a tablet, without page scrolling. All story text and speech use **Hebrew first, then English**.
+A small pixel-art life simulator for Bar: body needs rise, actions affect them, ignored needs have visible consequences, and a parent is always available for care. Built for portrait and landscape tablets, without page scrolling. The frame uses the available screen height; a camera follows Bar across one undistorted 16:9 house scene. Room buttons keep every room reachable on narrower displays. The background, objects, characters, and touch targets share the same scene coordinates. All story text and speech use **Hebrew first, then English**.
 
 Play: **https://yogurtcp.github.io/bar-little-home/**
 
@@ -23,6 +23,9 @@ Open http://localhost:4192. The build validates every bilingual recording, packa
 
 ```sh
 node scripts/browser-check.mjs
+node scripts/tablet-layout-check.mjs
+# Optional Safari-engine check after installing Playwright WebKit:
+BROWSER=webkit node scripts/tablet-layout-check.mjs
 npm run deploy
 ```
 
